@@ -1,0 +1,15 @@
+POST http://localhost:8080/api/signup
+Content-Type: application/json
+
+{
+  "subject": "kenkoro",
+  "password": "admin",
+  "image": "",
+  "first_name": "Kirill",
+  "last_name": "Koro",
+  "role": "admin"
+}
+
+###
+GET http://localhost:8080/api/users
+Authorization: Bearer {{jwtToken}}
